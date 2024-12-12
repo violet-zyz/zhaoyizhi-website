@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户个人中心</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="profile.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="./profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="../index.html">首页</a>
+                <a href="../cart/cart.html">购物车</a>
+                <a href="../register/register.html">注册账户</a>
+                <a href="../auth/auth.html" id="login">登录</a>
+            </div>
+        </nav>
+    </header>
+    <div class="profile">
+        <h1>用户个人中心</h1>
+        <div id="user-info">
+            <p><strong>姓名：</strong><span id="user-name"></span></p>
+            <p><strong>电子邮件：</strong><span id="user-email"></span></p>
+        </div>
+        <h2>更改密码</h2>
+        <form id="change-password-form">
+            <label for="current-password">当前密码</label>
+            <input type="password" id="current-password" required placeholder="请输入当前密码">
+            <label for="new-password">新密码</label>
+            <input type="password" id="new-password" required placeholder="请输入新密码">
+            <label for="confirm-new-password">确认新密码</label>
+            <input type="password" id="confirm-new-password" required placeholder="再次输入新密码">
+            <button type="submit">更改密码</button>
+        </form>
+    </div>
+</body>
+</html>

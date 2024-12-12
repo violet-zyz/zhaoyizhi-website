@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('game.png'); /* 确保图片路径正确 */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.register-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#register-form input {
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

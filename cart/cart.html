@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="cart.js" defer></script>
+    <title>购物车</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="../index.html">首页</a>
+                <a href="cart.html">购物车</a>
+                <a href="../profile/profile.html">用户中心</a>
+                <a href="../register/register.html">注册账户</a>
+                <a href="../auth/auth.html" id="login">登录</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <h2>购物车</h2>
+        <!-- 商品列表 -->
+        <div class="cart-items"></div>
+
+        <!-- 总价和结算区域 -->
+        <div class="cart-summary">
+            <p>总价：<span id="total-price">0 元</span></p>
+            <button class="checkout-btn">结算</button>
+        </div>
+    </main>
+</body>
+</html>
